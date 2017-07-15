@@ -24,3 +24,5 @@ optional arguments:
 
 
 #### CV.py is a helper tool for cross validation using sklearn.
+
+#### ChemBlPred-- predict target of query molecule based off ChemBl database
