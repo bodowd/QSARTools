@@ -52,6 +52,7 @@ def calc_all(df_SMILES):
 def add_IC50s(df_SMILES, df_desc):
     df_SMILES = df_SMILES.set_index('molecule')
     df_desc = df_desc.reset_index().T
+    ## need to add some code that can look for a column labeled "IC50" or something
     df_desc.columns = df_desc.iloc[0]
     df_desc = df_desc[1:]
     df_desc.index = df_desc.index.astype(int)
