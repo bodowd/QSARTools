@@ -4,8 +4,10 @@ import argparse
 Takes in a csv, collects SMILES and molecule id information
 and outputs a .smi file to pass to rfrag and indexing in rdkit
 
+python make_smiles.py filename.csv 'column1,column2'
+
 """
-parser = argparse.ArgumentParser(help = 'collect molecule SMILES and id from csv and convert to smi')
+parser = argparse.ArgumentParser()
 parser.add_argument('filename', help = 'csv with smiles and molecule id')
 parser.add_argument('columns', help = 'column headers separated by columns (ex: column1,column2)')
 args = parser.parse_args()
